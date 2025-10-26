@@ -1,0 +1,179 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    & .arrow_down{
+        width: 1vw;
+        height: 1vh;
+    }
+}
+
+main{
+    flex-grow: 1;
+    margin: auto;
+    width: 80vw;
+}
+
+nav{
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    height: 5vh;
+    z-index: 20;
+        
+    & a{
+        text-decoration: none;
+        color: black;
+    }
+
+    & img{
+        width: 8vw;
+    }
+
+    
+
+    & #product, & #templates{
+        border: none;
+        background-color: white;
+        padding: 1vw;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    
+    & #menu_item_templates:hover > #menu_item_templates_drop_down, & #menu_item_product:hover > #menu_item_product_drop_down{
+        display: block;
+        z-index: 5;
+        align-items: center;
+    }
+
+    & #menu_item_product:hover > #product, & #menu_item_templates:hover > #templates{
+        background-color: #00b289;
+        color: white;
+    }
+
+    & #menu_item_product_drop_down, & #menu_item_templates_drop_down{
+        display: none;
+        position: absolute;
+        background-color: white;
+        & a{
+            height: 5vh;
+            display: block;
+            padding-top: 2.5vh;
+            padding-left: 1vw;
+            padding-right: 1vw;
+            &:hover{
+                background-color: #00b289;
+                color: white;
+            }
+        }
+    }
+
+    & #menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &>a{
+            padding: 1vw;
+            &:hover{
+                background-color: #00b289;
+                color: white;
+            }
+        } 
+    }
+
+    & #login{
+        background-color: white;
+        border: 1px solid #00b289;
+        height: 5vh;
+        color: #00b289;
+        font-weight: bold;
+        margin-right: 1vw;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    & #start{
+        background-color: #00b289;
+        color: white;
+        font-weight: bold;
+        height: 5vh;
+        border: none;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    
+}
+
+footer{
+    margin: auto;
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+
+    & a{
+        text-decoration: none;
+        display: block;
+        color: black;
+        margin-bottom: 1vh;
+        padding-left: 1vw;
+
+        &#pricing{
+            color: #00b289;
+        }
+    }
+
+    &>div>div{
+        margin-top: 2vh;
+    }
+
+    & .templates_dropdown_button_1, & .templates_dropdown_button_2, & .templates_dropdown_button_3, & .templates_dropdown_button_4, & .templates_dropdown_button_5, & .templates_dropdown_button_6, & .templates_dropdown_button_7{
+        border: none;
+        background-color: white;
+        padding-left: 1vw;
+        height: 3vh;
+    }
+
+    & .templates_dropdown_container{
+        margin-bottom: 1vh;
+    }
+
+    & .templates_dropdown_container:hover > .templates_dropdown_button_1, & .templates_dropdown_container:hover > .templates_dropdown_button_2, & .templates_dropdown_container:hover > .templates_dropdown_button_3, & .templates_dropdown_container:hover > .templates_dropdown_button_4, & .templates_dropdown_container:hover > .templates_dropdown_button_5, & .templates_dropdown_container:hover > .templates_dropdown_button_6{
+        cursor: pointer;
+    }
+    
+    & >#column_3 > .templates_dropdown_container:hover > .templates_dropdown_button_7{
+        background-color: #00b289;
+        color: white;
+    }
+
+    & > #column_3 > .templates_dropdown_container:hover > .templates_dropdown_content_7{
+        display: block;
+        z-index: 15;
+        align-items: left;
+    }
+
+    & .templates_dropdown_content_7{
+        display: none;
+        position: absolute;
+        background-color: white;
+        & a{
+            height: 3vh;
+            display: block;
+            padding-top: 1vh;
+            padding-left: 1vw;
+            padding-right: 1vw;
+            &:hover{
+                background-color: #00b289;
+                color: white;
+            }
+        }
+    }
+}
