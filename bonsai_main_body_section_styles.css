@@ -1,3 +1,7 @@
+body{
+    background-color: whitesmoke;
+}
+
 main{
     padding-top: 5vh;
 }
@@ -71,5 +75,70 @@ main{
                 transform: translateX(32px);
             }
         }
+    }
+}
+
+#price_tiles{
+    margin: auto;
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5vh;
+
+    /* & #workflow, & #workflow_plus{
+        width: calc((4/10)*75vw);
+    } */
+
+    &>div{
+        background-color: white;
+        width: calc((3/10) * 75vw);
+        height: 75vh;
+    }
+
+    & span{
+        border-bottom: 2px solid #00b289;
+        height: 10vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        & .value{
+            font-size: 8vh;
+        }
+        & .period{
+            font-size: medium;
+            margin-top: 6vh;
+        }
+        & .currency{
+            margin-top: 0;
+            size: 2vh;
+        }
+    }
+
+    & .unordered_list>li{
+        margin-bottom: 1vh;
+        &::marker{
+            color: #00b289;
+        }
+    }
+
+    & button{
+        margin: auto;
+        background-color: #00b289;
+        color: white;
+        width: 17vw;
+        height: 5vh;
+        border: none;
+        margin-left: 5vh;
+        margin-right: 5vh;
+        margin-bottom: 5vh;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    & h2, span, ul{
+        margin-left: 5vh;
+        margin-right: 5vh;
     }
 }

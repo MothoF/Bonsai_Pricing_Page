@@ -37,7 +37,7 @@ nav{
 
     & #product, & #templates{
         border: none;
-        background-color: white;
+        background-color: whitesmoke;
         padding: 1vw;
         &:hover{
             cursor: pointer;
@@ -58,7 +58,7 @@ nav{
     & #menu_item_product_drop_down, & #menu_item_templates_drop_down{
         display: none;
         position: absolute;
-        background-color: white;
+        background-color: whitesmoke;
         & a{
             height: 5vh;
             display: block;
@@ -67,7 +67,7 @@ nav{
             padding-right: 1vw;
             &:hover{
                 background-color: #00b289;
-                color: white;
+                color: whitesmoke;
             }
         }
     }
@@ -87,7 +87,7 @@ nav{
     }
 
     & #login{
-        background-color: white;
+        background-color: whitesmoke;
         border: 1px solid #00b289;
         height: 5vh;
         color: #00b289;
@@ -117,6 +117,7 @@ footer{
     width: 75vw;
     display: flex;
     justify-content: space-between;
+    padding-top: 10vh;
 
     & a{
         text-decoration: none;
