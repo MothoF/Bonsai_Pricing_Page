@@ -142,3 +142,51 @@ main{
         margin-right: 5vh;
     }
 }
+
+#add_ons{
+    margin: auto;
+    width: 75vw;
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &>p{
+        font-size: 1.5rem;
+    }
+
+    & .container{
+        background-color: white;
+        margin: auto;
+        width: 75vw;
+        height: 20vh;
+        margin-bottom: 5vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & .sub_container_1{
+            margin-left: 5vh;
+        }
+
+        & .sub_container_2{
+            margin-right: 5vh;
+        }
+
+        & .bold_text{
+            font-weight: bolder;
+            font-size: 2rem;
+            margin-bottom: 0px;
+        }
+
+        & .per_period{
+            margin-top: 0px;
+        }
+
+        & a{
+            text-decoration: none;
+            color: #00b289;
+        }
+    }
+}
