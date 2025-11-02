@@ -137,7 +137,7 @@ footer{
 
     & .templates_dropdown_button_1, & .templates_dropdown_button_2, & .templates_dropdown_button_3, & .templates_dropdown_button_4, & .templates_dropdown_button_5, & .templates_dropdown_button_6, & .templates_dropdown_button_7{
         border: none;
-        background-color: white;
+        background-color: whitesmoke;
         padding-left: 1vw;
         height: 3vh;
     }
@@ -164,7 +164,7 @@ footer{
     & .templates_dropdown_content_7{
         display: none;
         position: absolute;
-        background-color: white;
+        background-color: whitesmoke;
         & a{
             height: 3vh;
             display: block;
